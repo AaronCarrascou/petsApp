@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,4 +22,172 @@ header{
 .contenedor{
     width: 98%;
     margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 1px 0;
+    cursor: pointer;
+}
+
+header .contenedor{
+    display: table;   
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+/* ---------------menu---------- */
+
+#menu-bar{
+    display: none;
+
+}
+.menu{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu a:hover{
+    background:  rgba(255, 255, 255, 0.3);;
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+/* ---------------Banner-------------*/
+
+#banner{
+    margin-top: 50px;  
+    position: relative; 
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+
+#banner h2{
+    font-size: 28px;
+    
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 2px solid white;
+}
+#banner a:hover{
+    background: rgba(51, 51, 51, 0.5);
+}
+
+/*-----bienvenidos-----*/
+
+#bienvenidos{
+    padding: 10px;
+    text-align: center;
+}
+
+/*--------blog-------*/
+
+#blog h3, h4{
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#blog article{
+    margin: 15px;
+}
+#blog img{
+    width: 100%;
+    max-width: 280px;
+}
+
+/*----------info-----------*/
+
+#info {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#info .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-pet{
+    margin: 20px;
+
+}
+
+.info-pet img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+/*-------footer--------*/
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    margin: 5px;
+    color: #333;
+    text-decoration: none;
 }
