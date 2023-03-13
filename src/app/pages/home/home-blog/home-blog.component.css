@@ -1,0 +1,53 @@
+/*-----bienvenidos-----*/
+
+#bienvenidos{
+    padding: 10px;
+    text-align: center;
+}
+
+/*--------blog-------*/
+
+#blog h3, h4{
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#blog article{
+    margin: 15px;
+}
+#blog img{
+    width: 100%;
+    max-width: 280px;
+}
+
+/*----------info-----------*/
+
+#info {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#info .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-pet{
+    margin: 20px;
+
+}
+
+.info-pet img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
